@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-BM8BQQ3_SQLEXPRESS.SAV"
+  DTS:DTSID="{02A8E78A-7352-46C8-B0CD-606EB6DEFB99}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-BM8BQQ3\SQLEXPRESS;Initial Catalog=SAV;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SistemaAnalicisVentas-{02A8E78A-7352-46C8-B0CD-606EB6DEFB99}DESKTOP-BM8BQQ3\SQLEXPRESS.SAV;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
