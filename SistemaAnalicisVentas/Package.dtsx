@@ -11,8 +11,8 @@
   DTS:LocaleID="7178"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="71"
-  DTS:VersionGUID="{14CC1446-C0EA-4D03-8EE9-A4B2D13A5E0C}">
+  DTS:VersionBuild="100"
+  DTS:VersionGUID="{DAEE18B7-E9B7-4933-B15C-1D315E01E737}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -121,71 +121,6 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{2F76AFFE-3358-4EEC-81BD-50ED7B9A68D3}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="7178"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Ahlea\Downloads\Archivo CSV Análisis de Ventas-20250922\products.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductID"
-              DTS:DTSID="{A06E8FCA-DE88-4B9F-87D5-46D0E51097B0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductName"
-              DTS:DTSID="{EABE3A83-BAA8-4944-A432-D42ED47280AA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Category"
-              DTS:DTSID="{C9224841-0390-4EB9-AA0F-B1A13D10A6EC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Price"
-              DTS:DTSID="{A1681D38-7DB1-41ED-8EDF-7E6050CF40E1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Stock"
-              DTS:DTSID="{A6C446D0-EEDF-47FF-9049-A2C06329DB7C}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[orders]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{A8074DF1-ECE4-45AB-A308-0FA89F9CCD82}"
@@ -207,7 +142,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="OrderID"
-              DTS:DTSID="{ACA539F7-DF55-43C6-B578-5BB584F063A8}"
+              DTS:DTSID="{6369DA1B-21A3-4C17-BA19-7ED339F7EFA2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -215,7 +150,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{2F86F7C9-D4AB-4FB3-AFAE-63DDB24A6093}"
+              DTS:DTSID="{9BC0FD38-1D9B-4B34-8079-E22539C834D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -223,7 +158,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="OrderDate"
-              DTS:DTSID="{F99A9CF4-7D38-4CF3-8755-CCE1188F1580}"
+              DTS:DTSID="{61DC2BD0-7EB6-4272-9FC0-A1CD0C5F5A76}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -232,7 +167,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Status"
-              DTS:DTSID="{FF44F39F-1C0E-4F6D-A93C-443496A18C34}"
+              DTS:DTSID="{CA3D23D0-15B2-482F-8056-C15E94127BAD}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -470,13 +405,6 @@
                       externalMetadataColumnId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
                       lineageId="Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Email]" />
                     <inputColumn
-                      refId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].Columns[Phone]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Phone"
-                      externalMetadataColumnId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
-                      lineageId="Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]" />
-                    <inputColumn
                       refId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].Columns[City]"
                       cachedDataType="wstr"
                       cachedLength="50"
@@ -490,6 +418,13 @@
                       cachedName="Country"
                       externalMetadataColumnId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].ExternalColumns[country]"
                       lineageId="Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].Columns[Telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="Telefono"
+                      externalMetadataColumnId="Package\customers\customers_BD.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                      lineageId="Package\customers\Derived Column.Outputs[Derived Column Output].Columns[Telefono]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -800,11 +735,98 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\customers\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\customers\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\customers\Derived Column.Inputs[Derived Column Input].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Phone"
+                      lineageId="Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\customers\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\customers\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\customers\Derived Column.Outputs[Derived Column Output].Columns[Telefono]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\customers\Derived Column.Outputs[Derived Column Output].Columns[Telefono]"
+                      name="Telefono"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[RIGHT]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE](([SUBSTRING](#{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]},1,2) == "+1" ? [SUBSTRING](#{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]},3,[LEN](#{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]})) : ([SUBSTRING](#{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]},1,3) == "001" ? [SUBSTRING](#{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]},4,[LEN](#{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]})) : #{Package\customers\Customers_CSV.Outputs[Flat File Source Output].Columns[Phone]})),"(",""),")",""),"-","")," ",""),".",""),"x",""),"+",""),10)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">RIGHT(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE((SUBSTRING(Phone,1,2) == "+1" ? SUBSTRING(Phone,3,LEN(Phone)) : (SUBSTRING(Phone,1,3) == "001" ? SUBSTRING(Phone,4,LEN(Phone)) : Phone)),"(",""),")",""),"-","")," ",""),".",""),"x",""),"+",""),10)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\customers\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\customers\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\customers\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
-              refId="Package\customers.Paths[Flat File Source Output]"
+              refId="Package\customers.Paths[Derived Column Output]"
               endId="Package\customers\customers_BD.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\customers\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\customers.Paths[Flat File Source Output]"
+              endId="Package\customers\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\customers\Customers_CSV.Outputs[Flat File Source Output]" />
           </paths>
@@ -1228,6 +1250,240 @@
           version="1">
           <components>
             <component
+              refId="Package\orders\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\orders\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\orders\Conditional Split.Inputs[Conditional Split Input].Columns[CustomerID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerID"
+                      lineageId="Package\orders\orders_CSV.Outputs[Flat File Source Output].Columns[CustomerID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\orders\Conditional Split.Outputs[Case 1]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\orders\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">![ISNULL](#{Package\orders\orders_CSV.Outputs[Flat File Source Output].Columns[CustomerID]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">!ISNULL(CustomerID)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\orders\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\orders\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\orders\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\orders\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\orders\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\orders\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\orders\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\orders\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\orders\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[customers]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[customers]) [refTable]
+where [refTable].[CustomerID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CustomerID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Email" dataType="DT_WSTR" length="500" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Phone" dataType="DT_WSTR" length="70" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="City" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="country" dataType="DT_WSTR" length="70" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\orders\orders_CSV.Outputs[Flat File Source Output].Columns[CustomerID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\orders\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-BM8BQQ3\SQLEXPRESS.SAV]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-BM8BQQ3\SQLEXPRESS.SAV]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\orders\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\orders\Lookup.Inputs[Lookup Input].Columns[CustomerID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerID"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\orders\orders_CSV.Outputs[Flat File Source Output].Columns[CustomerID]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">CustomerID</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">CustomerID</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\orders\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\orders\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\orders\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\orders\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\orders\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\orders\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\orders\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\orders\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\orders\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\orders\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\orders\orders_BD"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -1243,7 +1499,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[orders]</property>
+                  name="OpenRowset">[dbo].[orders_BD]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1308,7 +1564,8 @@ FROM     orders</property>
                       lineageId="Package\orders\orders_CSV.Outputs[Flat File Source Output].Columns[OrderID]" />
                     <inputColumn
                       refId="Package\orders\orders_BD.Inputs[OLE DB Destination Input].Columns[CustomerID]"
-                      cachedDataType="i4"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="CustomerID"
                       externalMetadataColumnId="Package\orders\orders_BD.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
                       lineageId="Package\orders\orders_CSV.Outputs[Flat File Source Output].Columns[CustomerID]" />
@@ -1539,10 +1796,20 @@ FROM     orders</property>
           </components>
           <paths>
             <path
-              refId="Package\orders.Paths[Flat File Source Output]"
+              refId="Package\orders.Paths[Case 1]"
               endId="Package\orders\orders_BD.Inputs[OLE DB Destination Input]"
+              name="Case 1"
+              startId="Package\orders\Conditional Split.Outputs[Case 1]" />
+            <path
+              refId="Package\orders.Paths[Flat File Source Output]"
+              endId="Package\orders\Lookup.Inputs[Lookup Input]"
               name="Flat File Source Output"
               startId="Package\orders\orders_CSV.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\orders.Paths[Lookup Match Output]"
+              endId="Package\orders\Conditional Split.Inputs[Conditional Split Input]"
+              name="Lookup Match Output"
+              startId="Package\orders\Lookup.Outputs[Lookup Match Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2142,7 +2409,7 @@ FROM     orders</property>
     design-time-name="Package\customers">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="156,41.6"
           Id="Package\customers\Customers_CSV"
@@ -2150,21 +2417,71 @@ FROM     orders</property>
         <NodeLayout
           Size="146.4,41.6"
           Id="Package\customers\customers_BD"
-          TopLeft="152.769228492791,168.461535951266" />
+          TopLeft="157.269228425736,215.461535250911" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\customers\Derived Column"
+          TopLeft="115.499998278916,117.999998390675" />
         <EdgeLayout
           Id="Package\customers.Paths[Flat File Source Output]"
-          TopLeft="229.523074629444,73.1384610685019">
+          TopLeft="233.076920766097,73.1384610685019">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,95.3230748827641"
+              EndConnector="-41.1769224871812,44.8615373221727"
               Start="0,0"
-              End="0,87.8230748827641">
+              End="-41.1769224871812,37.3615373221727">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,87.8230748827641" />
+                    End="0,18.4307686610863" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.4307686610863"
+                    Point2="0,22.4307686610863"
+                    Point3="-4,22.4307686610863" />
+                  <mssgle:LineSegment
+                    End="-37.1769224871812,22.4307686610863" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-37.1769224871812,22.4307686610863"
+                    Point2="-41.1769224871812,22.4307686610863"
+                    Point3="-41.1769224871812,26.4307686610863" />
+                  <mssgle:LineSegment
+                    End="-41.1769224871812,37.3615373221727" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\customers.Paths[Derived Column Output]"
+          TopLeft="191.899998278916,159.599998390675">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.56923014682,55.8615368602366"
+              Start="0,0"
+              End="38.56923014682,48.3615368602366">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9307684301183" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.9307684301183"
+                    Point2="0,27.9307684301183"
+                    Point3="4,27.9307684301183" />
+                  <mssgle:LineSegment
+                    End="34.56923014682,27.9307684301183" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.56923014682,27.9307684301183"
+                    Point2="38.56923014682,27.9307684301183"
+                    Point3="38.56923014682,31.9307684301183" />
+                  <mssgle:LineSegment
+                    End="38.56923014682,48.3615368602366" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2193,7 +2510,7 @@ FROM     orders</property>
     design-time-name="Package\orderDetails">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\orderDetails\OLE DB Destination"
@@ -2233,9 +2550,7 @@ FROM     orders</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2258,7 +2573,7 @@ FROM     orders</property>
     design-time-name="Package\orders">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="135.2,41.6"
           Id="Package\orders\orders_CSV"
@@ -2266,33 +2581,113 @@ FROM     orders</property>
         <NodeLayout
           Size="128,41.6"
           Id="Package\orders\orders_BD"
-          TopLeft="128.333331421017,195.33333042264" />
+          TopLeft="114.999998816185,307.999996305837" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\orders\Conditional Split"
+          TopLeft="76.1111069525836,215.511109612474" />
+        <EdgeLayout
+          Id="Package\orders.Paths[Case 1]"
+          TopLeft="152.911106952584,257.111109612474">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="26.0888918636013,50.888886693363"
+              Start="0,0"
+              End="26.0888918636013,43.388886693363">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.4444433466815" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.4444433466815"
+                    Point2="0,25.4444433466815"
+                    Point3="4,25.4444433466815" />
+                  <mssgle:LineSegment
+                    End="22.0888918636013,25.4444433466815" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.0888918636013,25.4444433466815"
+                    Point2="26.0888918636013,25.4444433466815"
+                    Point3="26.0888918636013,29.4444433466815" />
+                  <mssgle:LineSegment
+                    End="26.0888918636013,43.388886693363" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.17364000569936,30.4444433466815,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\orders\Lookup"
+          TopLeft="105.555549788255,136.355554607356" />
+        <EdgeLayout
+          Id="Package\orders.Paths[Lookup Match Output]"
+          TopLeft="161.955549788255,177.955554607356">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.04444283567096,37.5555550051177"
+              Start="0,0"
+              End="-9.04444283567096,30.0555550051177">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.7777775025588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.7777775025588"
+                    Point2="0,18.7777775025588"
+                    Point3="-4,18.7777775025588" />
+                  <mssgle:LineSegment
+                    End="-5.04444283567096,18.7777775025588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.04444283567096,18.7777775025588"
+                    Point2="-9.04444283567096,18.7777775025588"
+                    Point3="-9.04444283567096,22.7777775025588" />
+                  <mssgle:LineSegment
+                    End="-9.04444283567096,30.0555550051177" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-61.3247187772063,24.9333330500788,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\orders.Paths[Flat File Source Output]"
           TopLeft="208.933331227302,83.9333327025175">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-16.599999806285,111.399997720122"
+              EndConnector="-46.9777814390475,52.4222219048386"
               Start="0,0"
-              End="-16.599999806285,103.899997720122">
+              End="-46.9777814390475,44.9222219048386">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.6999988600612" />
+                    End="0,22.2111109524193" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,51.6999988600612"
-                    Point2="0,55.6999988600612"
-                    Point3="-4,55.6999988600612" />
+                    Point1="0,22.2111109524193"
+                    Point2="0,26.2111109524193"
+                    Point3="-4,26.2111109524193" />
                   <mssgle:LineSegment
-                    End="-12.599999806285,55.6999988600612" />
+                    End="-42.9777814390475,26.2111109524193" />
                   <mssgle:CubicBezierSegment
-                    Point1="-12.599999806285,55.6999988600612"
-                    Point2="-16.599999806285,55.6999988600612"
-                    Point3="-16.599999806285,59.6999988600612" />
+                    Point1="-42.9777814390475,26.2111109524193"
+                    Point2="-46.9777814390475,26.2111109524193"
+                    Point3="-46.9777814390475,30.2111109524193" />
                   <mssgle:LineSegment
-                    End="-16.599999806285,103.899997720122" />
+                    End="-46.9777814390475,44.9222219048386" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
